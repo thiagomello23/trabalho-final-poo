@@ -18,3 +18,5 @@ public class TrabalhoApplication {
 
 // Problemas com link:
 // https://www.masterspringboot.com/data-access/jpa-applications/how-to-get-your-tables-automatically-created-with-spring-boot/#google_vignette
+
+// https://www.youtube.com/watch?v=CvDS6DltIno
