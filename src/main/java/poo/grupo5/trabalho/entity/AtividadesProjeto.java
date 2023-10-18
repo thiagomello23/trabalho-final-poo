@@ -7,7 +7,9 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import java.util.List;
 
 @Entity(name = "atividadesprojeto")
 @Table(name = "atividadesprojeto")
@@ -26,6 +28,9 @@ public class AtividadesProjeto {
   @ManyToOne()
   @JoinColumn(name = "projeto_id")
   private Projeto projeto;
+
+  @OneToMany(mappedBy = "atividadesProjeto")
+  private List<Tarefas> tarefas;
 
   // Getters e setters
   public String getDescricao() {

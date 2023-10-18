@@ -1,5 +1,7 @@
 package poo.grupo5.trabalho.entity;
 
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,6 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity(name = "colaborador")
@@ -35,6 +38,9 @@ public class Colaborador {
   @ManyToOne()
   @JoinColumn(name = "funcao_id")
   private Funcao funcao;
+
+  @OneToMany(mappedBy = "colaborador")
+  private List<Tarefas> tarefas;
 
   // Getters e setters
   public String getCpf() {

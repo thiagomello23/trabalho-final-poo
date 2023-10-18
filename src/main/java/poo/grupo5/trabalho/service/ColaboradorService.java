@@ -2,9 +2,6 @@ package poo.grupo5.trabalho.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import poo.grupo5.trabalho.entity.Colaborador;
 import poo.grupo5.trabalho.entity.Funcao;
